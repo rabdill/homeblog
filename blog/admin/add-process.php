@@ -19,7 +19,7 @@
  
  
 
-    
+<a href="/blog/home.php">Back to home</a>    
 
       <div class="footer">
         <p>&copy; 2014</p>
