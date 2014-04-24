@@ -6,7 +6,8 @@
                 
                 $headline = mysql_escape_string($_POST['headline']);
                 $text = mysql_escape_string($_POST['text']);
-                $query="INSERT INTO posts (date, headline, text, excerpt) VALUES ('" . $_POST['date'] . "', '" . $headline . "', '" . $text . "', '" . $_POST['excerpt'] . "')";
+                $excerpt = mysql_escape_string($_POST['excerpt']);
+                $query="INSERT INTO posts (date, headline, text, excerpt) VALUES ('" . $_POST['date'] . "', '" . $headline . "', '" . $text . "', '" . $excerpt . "')";
                 echo "<br>" . $query . "<br>";
                 $data = mysql_query($query);
                 if($data == false) { echo "<strong><font color=red>Failed to add article: ";
