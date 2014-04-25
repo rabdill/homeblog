@@ -19,7 +19,8 @@
  
  
 
-<a href="/blog/home.php">Back to home</a>    
+<a href="/blog/home.php">Back to home</a><br>    
+<a href="/blog/admin/add.php">Add another</a>    
 
       <div class="footer">
         <p>&copy; 2014</p>

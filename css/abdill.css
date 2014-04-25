@@ -15,10 +15,18 @@
         display: none;
     }
  }
+
+.article    {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #C2C2C2;
+    }
+
  
  .headline  {
     font-family: 'Allan', Helvetica, Arial, sans-serif;
     }
+
     
 .article li    {
     padding: 10px;
@@ -47,7 +55,7 @@ a:hover {
 /* Space out content a bit */
 body {
     background: url(../img/retina_wood.png) repeat 0 0;     /*  background image via www.subtlepatterns.com, you should definitely go there. */
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 200px;
     font-family: 'Cabin', sans-serif;
     font-size: 17px;
