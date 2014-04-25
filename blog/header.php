@@ -55,7 +55,7 @@
 
 
     <div class="jumbotron container">
-            <h1>Rich Abdill</h1>
+            <h1><a href="/">Rich Abdill</a></h1>
             <h2>Maker of small internet things</h2>
 
     <div class="row centeredText">

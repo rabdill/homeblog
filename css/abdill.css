@@ -50,7 +50,13 @@ a:hover {
 .indent {
     margin-left: 25px;
     }
-    
+ 
+.blog-pic   {
+    float: right;
+    width: 180px;
+    padding-left: 20px;
+    margin-top: -15px;
+    }
     
 /* Space out content a bit */
 body {
@@ -91,6 +97,11 @@ body {
     font-family: 'Lobster', cursive;
     font-size: 85px;
     color: #FFBF6E;
+    }
+    
+.jumbotron a    {
+    text-decoration: none;
+    color: inherit;
     }
  
  h2 {
