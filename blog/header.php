@@ -11,7 +11,7 @@
     <meta name="author" content="Rich Abdill">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Rich Abdill | IT Tinkerer</title>
+    <title>Rich Abdill | Blog</title>
 
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
