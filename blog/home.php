@@ -15,8 +15,8 @@
                 if($fullPost) echo"<a href='post.php?postID=" . $info['postID'] . "'>" . $info['headline'] . "</a></h2>";
                 else echo $info['headline'] . "</h2>";
             echo "<p class='datestamp'>" . date('F j, Y',strtotime($info['date'])) . "</p>";        
-            echo "<div class='article'>" . $info['excerpt'] . " <em><a href='post.php?postID=" . $info['postID'] . "'>";
-                if($fullPost) echo"Read more...</a></em></p></div>";  
+            echo "<div class='article'>" . $info['excerpt'];
+                if($fullPost) echo " <em><a href='post.php?postID=" . $info['postID'] . "'> Read more...</a></em></p></div>";  
                 else echo "</p></div>";
             
             
