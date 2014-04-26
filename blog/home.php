@@ -7,7 +7,7 @@
 <div class="container" >
     <?php
         $query = "SELECT * FROM posts WHERE DATEDIFF('" . date( 'Y-m-d', time()) . "', post_date) > -1 ORDER BY post_date DESC";
-        echo "<br><br>" . $query . "<br><br>";
+
         $data=mysql_query($query);
         
          if($data == false) { echo "<strong><font color=red>Failed to fetch posts: ";
