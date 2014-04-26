@@ -16,7 +16,7 @@
     <input type="hidden" name="postID" value="<?php echo $_GET['postID']; ?>">
     <div class="form-group">
         <label for="date" class="control-label">Date:</label>
-        <input type="text" name="date" class="form-control" value="<?php echo $info['date']; ?>" style="width: 120px;">
+        <input type="text" name="date" class="form-control" value="<?php echo $info['post_date']; ?>" style="width: 120px;">
     </div>
     
     <div class="form-group ">
@@ -31,7 +31,7 @@
     <div class="form-group ">
         <label for="excerpt" class="control-label">Excerpt:</label>
         <textarea class="form-control" rows="5" name="excerpt"><?php echo $info['excerpt']; ?></textarea>
-    </div>
+    </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

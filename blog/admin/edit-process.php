@@ -5,7 +5,7 @@
                 $headline = mysql_escape_string($_POST['headline']);
                 $text = mysql_escape_string($_POST['text']);
                 $excerpt = mysql_escape_string($_POST['excerpt']);
-                $query="UPDATE posts SET date ='". $_POST['date'] . "', headline='" . $headline . "', text='" . $text . "', excerpt='" . $excerpt . "' WHERE postID='" . $_POST['postID'] . "'";
+                $query="UPDATE posts SET post_date ='". $_POST['date'] . "', headline='" . $headline . "', text='" . $text . "', excerpt='" . $excerpt . "' WHERE postID='" . $_POST['postID'] . "'";
                 echo "<br><pre>" . $query . "</pre><br>";
                 $data = mysql_query($query);
                 if($data == false) { echo "<strong><font color=red>Failed to edit article: ";

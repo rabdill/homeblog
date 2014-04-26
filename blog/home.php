@@ -6,7 +6,15 @@
 
 <div class="container" >
     <?php
-        $data=mysql_query("SELECT * FROM posts ORDER BY date DESC");
+        $query = "SELECT * FROM posts WHERE DATEDIFF('" . date( 'Y-m-d', time()) . "', post_date) > -1 ORDER BY post_date DESC";
+        echo "<br><br>" . $query . "<br><br>";
+        $data=mysql_query($query);
+        
+         if($data == false) { echo "<strong><font color=red>Failed to fetch posts: ";
+								die(mysql_error());
+								echo "</strong></font><br><br>";		}
+                                
+                                
         while($info = mysql_fetch_array($data))
             {
             $fullPost=true;
@@ -14,7 +22,7 @@
             echo "<h2 class='headline'>";
                 if($fullPost) echo"<a href='post.php?postID=" . $info['postID'] . "'>" . $info['headline'] . "</a></h2>";
                 else echo $info['headline'] . "</h2>";
-            echo "<p class='datestamp'>" . date('F j, Y',strtotime($info['date'])) . "</p>";        
+            echo "<p class='datestamp'>" . $info['post_date'] . "</p>";        
             echo "<div class='article'>" . $info['excerpt'];
                 if($fullPost) echo " <em><a href='post.php?postID=" . $info['postID'] . "'> Read more...</a></em></p></div>";  
                 else echo "</p></div>";
